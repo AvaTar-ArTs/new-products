@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "packages": [
+    "agent-workspace-bridge/product.json",
+    "archive-atlas/product.json",
+    "creator-asset-intelligence/product.json",
+    "creator-commerce-foundry/product.json",
+    "local-ai-fleet/product.json",
+    "python-portfolio-forge/product.json",
+    "workvault-control/product.json"
+  ],
+  "scope": {
+    "observed_mounts": [
+      "/Users/steven",
+      "/Volumes/bakUp",
+      "/Volumes/2T-Xx",
+      "/Volumes/DeVonDaTa"
+    ],
+    "scan_policy": "metadata-first, local-only, no credentials, no raw private inventories"
+  },
+  "shared_engine": [
+    "local inventory and content hashing",
+    "preview-first plans and approval gates",
+    "durable JSONL runs and cancellation",
+    "redacted evidence-backed reports",
+    "provider and renderer adapters"
+  ],
+  "channel_rule": "Packageable does not mean sold; marketplace submission, account access, rights, signing, and human approval remain separate gates."
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "agent-workspace-bridge",
+  "name": "Agent Workspace Bridge",
+  "tagline": "Keep Claude, Codex, Cursor, Gemini, and Qwen workspaces aligned.",
+  "release_state": "prototype",
+  "buyer": {"primary": "AI developers and small teams using multiple agent runtimes", "job_to_be_done": "Inspect configuration drift, skills, agents, hooks, profiles, and session artifacts across local AI environments."},
+  "promise": "Build a cross-runtime capability map, detect drift safely, and export a proposed alignment plan without overwriting canonical configuration.",
+  "non_goals": ["silent config synchronization", "uploading private prompts or credentials", "claiming behavioral parity without tests"],
+  "surfaces": {"free": ["runtime inventory", "capability matrix", "drift report"], "pro": ["translation proposals", "parity test prompts", "profile/version history", "sanitized handoff packs"], "team": ["approved canonical registry", "review workflow", "change audit trail"]},
+  "distribution": [{"channel": "GitHub", "artifact": "capability atlas CLI", "status": "planned"}, {"channel": "Product Hunt", "artifact": "multi-agent drift demo", "status": "candidate"}, {"channel": "Gumroad", "artifact": "agent workspace starter kit", "status": "planned"}, {"channel": "Setapp", "artifact": "native workspace inspector", "status": "future"}],
+  "pricing_hypothesis_usd": {"community": 0, "pro_lifetime": 49, "team_monthly": 15},
+  "source_map": ["/Users/steven/iterm2/agent_ops", "/Users/steven/iterm2/agents", "/Users/steven/iterm2/skills", "/Users/steven/.agent-skills", "/Volumes/2T-Xx/claude", "/Volumes/2T-Xx/gemini", "/Volumes/2T-Xx/my-supremepowers"],
+  "proof": ["multi-runtime AGENTS.md and skills architecture", "structured JSONL agent operations model", "capability-atlas translation contract"],
+  "privacy": {"default": "local-only", "redaction": "secrets, prompts, and user paths excluded by policy", "canonical_state": "read-only until approved"},
+  "launch_gates": ["runtime fixture set", "drift and symlink tests", "redaction tests", "explicit apply/rollback workflow"]
+}

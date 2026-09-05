@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "local-ai-fleet",
+  "name": "Local AI Fleet",
+  "tagline": "Know which local models, runtimes, and endpoints your Mac can actually use.",
+  "release_state": "prototype",
+  "buyer": {"primary": "Ollama users, local-model developers, and AI consultants", "job_to_be_done": "Inventory local model files and services, check health, and choose machine-aware workflows."},
+  "promise": "Inspect local AI installations, models, endpoints, disk pressure, and compatibility signals without sending model data to a hosted service.",
+  "non_goals": ["model hosting", "automatic model deletion", "unbounded background downloads"],
+  "surfaces": {"free": ["model inventory", "endpoint health check", "disk/use report"], "pro": ["machine-aware recommendations", "download queue with cancellation", "model lifecycle history"], "consultant": ["multi-machine report", "sanitized deployment checklist", "support bundle"]},
+  "distribution": [{"channel": "Product Hunt", "artifact": "local model control demo", "status": "candidate"}, {"channel": "Gumroad", "artifact": "Pro CLI and workflow pack", "status": "planned"}, {"channel": "Setapp", "artifact": "native local AI dashboard", "status": "future"}],
+  "pricing_hypothesis_usd": {"community": 0, "pro_lifetime": 59, "consultant": 149},
+  "source_map": ["new-products/workvault_maintenance/cli.py", "/Users/steven/pythons/ollama", "/Users/steven/pythons/llm", "/Users/steven/pythons/local-ai*", "/Users/steven/.ollama"],
+  "proof": ["Ollama installation workflow was already exercised", "local AI directories and tools exist across home and volumes", "WorkVault provider protocol has an Ollama adapter"],
+  "privacy": {"default": "local-only", "network": "only user-requested model or endpoint operations", "telemetry": "off by default"},
+  "launch_gates": ["Ollama health fixtures", "model metadata schema", "download cancellation tests", "Apple Silicon and Intel compatibility matrix"]
+}

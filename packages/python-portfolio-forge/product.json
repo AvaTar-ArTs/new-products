@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "python-portfolio-forge",
+  "name": "Python Portfolio Forge",
+  "tagline": "Turn a sprawling Python folder into an evidence-backed portfolio.",
+  "release_state": "private-beta",
+  "buyer": {"primary": "Python consultants, agencies, maintainers, and technical founders", "job_to_be_done": "Understand a large script ecosystem, find true content duplicates, and select reusable products without deleting working code."},
+  "promise": "Scan source trees, hash file contents, preserve every duplicate path, classify risk, and produce a productization queue.",
+  "non_goals": ["blind deduplication", "name-only duplicate claims", "uploading source code to a remote AI service"],
+  "surfaces": {"community": ["bounded scanner", "CSV/JSON reports", "content-hash duplicate groups"], "pro": ["review dashboard", "project clustering", "release/package suggestions", "redacted shareable reports"], "consultant": ["client workspaces", "approval queues", "exportable audit package"]},
+  "distribution": [{"channel": "PyPI", "artifact": "portfolio-forge CLI", "status": "planned"}, {"channel": "GitHub", "artifact": "source and sample fixtures", "status": "ready-to-prepare"}, {"channel": "Gumroad", "artifact": "Pro templates, report themes, and onboarding", "status": "planned"}, {"channel": "Setapp", "artifact": "native visual review app", "status": "future"}],
+  "pricing_hypothesis_usd": {"community": 0, "pro_lifetime": 79, "consultant_monthly": 19},
+  "source_map": ["/Users/steven/pythons/scan-to-csv/doc-source-enriched.py", "/Users/steven/pythons/scan-to-csv/scanner_utils.py", "/Users/steven/pythons/pythons-meta.csv", "/Users/steven/pythons/recon_output/duplicate-review-20260904.csv"],
+  "proof": ["19,244-file enriched scan completed on 2026-09-04", "5,404 content-hash duplicate groups retained for review", "sanitized duplicate-review fixture"],
+  "privacy": {"default": "local-only", "reports": "root-relative by default", "secrets": "sensitive names and credentials excluded from exports"},
+  "launch_gates": ["extract a bounded reusable CLI", "fixtures and regression tests", "redacted demo report", "license audit for bundled source"]
+}

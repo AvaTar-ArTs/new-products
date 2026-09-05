@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "id": "workvault-control",
+  "name": "WorkVault Control",
+  "tagline": "Run Mac maintenance you can see, stop, and resume.",
+  "release_state": "public-cli",
+  "buyer": {"primary": "AI-heavy Mac developers and consultants", "job_to_be_done": "Keep package managers, local AI tools, and long-running maintenance jobs observable and recoverable."},
+  "promise": "Create inspectable plans, execute approved provider steps, capture events, and recover from interruption without guessing what happened.",
+  "non_goals": ["automatic deletion of files", "remote telemetry by default", "unattended credential automation"],
+  "surfaces": {"free": ["Python CLI", "read-only plan", "JSONL run history", "status/log/report/resume"], "pro": ["native macOS control room", "visual run timeline", "policy profiles", "signed releases"], "team": ["shared sanitized reports", "retention policy", "admin-approved provider actions"]},
+  "distribution": [{"channel": "GitHub", "artifact": "source and signed release", "status": "ready-to-prepare"}, {"channel": "Homebrew", "artifact": "formula after stable CLI release", "status": "planned"}, {"channel": "Setapp", "artifact": "signed native macOS app", "status": "native-candidate"}, {"channel": "Gumroad", "artifact": "Pro license, onboarding, and support", "status": "planned"}],
+  "pricing_hypothesis_usd": {"free_cli": 0, "pro_lifetime": 39, "team_monthly_per_seat": 12},
+  "source_map": ["new-products/workvault_maintenance/cli.py", "new-products/workvault_maintenance/audit.py", "/Users/steven/scripts/updater-pro.sh", "/Users/steven/scripts/mac-cleanup-pro.sh"],
+  "proof": ["new-products/launch/WORKVAULT-CONTROL-LAUNCH.md", "new-products/tests/test_core.py"],
+  "package_files": ["new-products/launch/WORKVAULT-CONTROL-LAUNCH.md", "new-products/README.md"],
+  "privacy": {"default": "local-only", "network": "only provider commands requested by the user", "secrets": "never included in reports or package artifacts"},
+  "launch_gates": ["published README", "stable CLI test suite", "cancellation/timeout tests", "signed/notarized native wrapper before Setapp submission"]
+}

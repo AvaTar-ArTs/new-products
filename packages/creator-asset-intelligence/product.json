@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "creator-asset-intelligence",
+  "name": "Creator Asset Intelligence",
+  "tagline": "Know what your creative archive contains before you move or delete anything.",
+  "release_state": "prototype",
+  "buyer": {"primary": "independent creators, video editors, and small media teams", "job_to_be_done": "Inventory mixed media, detect identical content, and create safe review queues for valuable archives."},
+  "promise": "Build a metadata-rich media catalog with duration, dimensions, codecs, hashes, duplicate evidence, and recovery-aware actions.",
+  "non_goals": ["automatic destructive cleanup", "content upload without consent", "pretending filename similarity proves duplication"],
+  "surfaces": {"free": ["media inventory CLI", "CSV export", "duplicate review report"], "pro": ["visual gallery", "thumbnail/contact-sheet review", "quarantine and restore workflow", "batch metadata repair"], "studio": ["shared catalogs", "client delivery packages", "archive health reports"]},
+  "distribution": [{"channel": "Gumroad", "artifact": "Pro desktop beta", "status": "planned"}, {"channel": "GitHub", "artifact": "scanner core and fixtures", "status": "planned"}, {"channel": "Setapp", "artifact": "native catalog and review app", "status": "future"}],
+  "pricing_hypothesis_usd": {"free_cli": 0, "pro_lifetime": 59, "studio_monthly": 15},
+  "source_map": ["/Users/steven/pythons/vids.py", "/Users/steven/pythons/media_processing", "/Users/steven/pythons/scan-to-csv/doc-source-enriched.py"],
+  "proof": ["3,488-entry broad media inventory", "149 validated MP4 subset", "content-hash duplicate review model"],
+  "privacy": {"default": "local-only", "media": "never copied into reports", "exports": "paths can be root-relative or redacted"},
+  "launch_gates": ["ffprobe/MediaInfo adapter", "sample media fixtures", "safe quarantine manifest", "native app prototype"]
+}

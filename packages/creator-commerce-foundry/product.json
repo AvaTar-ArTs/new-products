@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "creator-commerce-foundry",
+  "name": "Creator Commerce Foundry",
+  "tagline": "Turn creative assets into organized, market-ready product kits.",
+  "release_state": "private-beta",
+  "buyer": {"primary": "digital product creators, Etsy sellers, and music/visual brands", "job_to_be_done": "Transform scattered images, music, metadata, and listing research into consistent products and marketplace-ready files."},
+  "promise": "Catalog assets, generate product bundles, create listing metadata, and export a reviewable launch kit for each product.",
+  "non_goals": ["automatic marketplace publishing", "using third-party assets without license review", "guaranteeing sales or platform ranking"],
+  "surfaces": {"free": ["asset catalog", "bundle manifest", "listing CSV export"], "pro": ["SEO title/tag drafts", "thumbnail/contact-sheet workflow", "marketplace templates", "license checklist"], "studio": ["batch product pipeline", "revenue tracking", "multi-store export packages"]},
+  "distribution": [{"channel": "Gumroad", "artifact": "creator product-kit generator", "status": "planned"}, {"channel": "Etsy", "artifact": "seller workflow templates and exports", "status": "manual-review only"}, {"channel": "Product Hunt", "artifact": "productization workflow demo", "status": "candidate"}],
+  "pricing_hypothesis_usd": {"starter": 29, "pro_lifetime": 99, "studio_monthly": 24},
+  "source_map": ["/Users/steven/pythons/seLLeable-item-rxtractor", "/Users/steven/pythons/seo_marketing", "/Users/steven/pythons/etsy-listing-generator.py", "/Users/steven/pythons/upload-products.py", "/Volumes/DeVonDaTa/Consolidated_Archives/Etsy_Assets", "/Volumes/DeVonDaTa/suno", "/Volumes/2T-Xx/etsy"],
+  "proof": ["Etsy asset archive exists on DeVonDaTa", "Suno and music product tooling exists", "existing SEO and sellable-item extraction scripts"],
+  "privacy": {"default": "local-first", "credentials": "never stored in product exports", "publishing": "approval required for every external submission"},
+  "launch_gates": ["license/provenance fields", "sample assets owned or cleared for redistribution", "marketplace policy review", "export-only first release"]
+}

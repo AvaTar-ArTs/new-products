@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-04",
+  "volumes": {
+    "/Users/steven": ["workvault-control", "python-portfolio-forge", "agent-workspace-bridge", "local-ai-fleet", "creator-commerce-foundry"],
+    "/Volumes/2T-Xx": ["archive-atlas", "agent-workspace-bridge", "local-ai-fleet", "creator-commerce-foundry", "creator-asset-intelligence"],
+    "/Volumes/DeVonDaTa": ["archive-atlas", "creator-commerce-foundry", "creator-asset-intelligence"],
+    "/Volumes/bakUp": ["archive-atlas", "creator-commerce-foundry", "agent-workspace-bridge"],
+    "/Volumes/newCho": []
+  },
+  "symlink_note": "/Volumes/newCho resolves to / and is intentionally excluded from product scans to avoid duplicate root traversal.",
+  "principle": "A volume is evidence for a product, not a product boundary; package only reviewed capabilities and sanitized fixtures."
+}

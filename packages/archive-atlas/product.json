@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "archive-atlas",
+  "name": "Archive Atlas",
+  "tagline": "Understand every copy across your drives before you consolidate.",
+  "release_state": "prototype",
+  "buyer": {"primary": "consultants, studios, and power users with multiple backup volumes", "job_to_be_done": "Compare live and backup volumes by content identity, not filenames, then produce a reviewable recovery plan."},
+  "promise": "Index mounted volumes, normalize path layouts, compare content hashes and metadata, and create a non-destructive consolidation report.",
+  "non_goals": ["automatic cross-volume deletion", "treating a backup as disposable", "following root symlinks without explicit opt-in"],
+  "surfaces": {"free": ["volume inventory", "CSV/JSON comparison", "missing/found/unlisted report"], "pro": ["duplicate clusters", "backup confidence score", "review queue", "restore manifest"], "consultant": ["client archive audit", "sanitized deliverable", "batch evidence pack"]},
+  "distribution": [{"channel": "Product Hunt", "artifact": "interactive archive audit demo", "status": "candidate"}, {"channel": "Gumroad", "artifact": "Pro CLI plus report templates", "status": "planned"}, {"channel": "Setapp", "artifact": "native volume comparison app", "status": "future"}],
+  "pricing_hypothesis_usd": {"community": 0, "pro_lifetime": 89, "consultant_project": 249},
+  "source_map": ["/Users/steven/pythons/scan-to-csv/all_scan_v2.py", "/Users/steven/pythons/scan-to-csv/ecosystem_scan_compare.py", "/Users/steven/pythons/compare_vault_full.py", "/Volumes/2T-Xx/vids-09-04-15:52-repaired.csv", "/Volumes/DeVonDaTa/vids-09-04-15:58.csv", "/Volumes/bakUp/vids-09-04-15:50.csv"],
+  "proof": ["three mounted data volumes plus backup volume mapped", "content-hash duplicate review model", "prior found/missing path comparison workflow"],
+  "privacy": {"default": "local-only", "network": "none", "exports": "root-relative or redacted; no file contents copied"},
+  "launch_gates": ["bounded volume fixtures", "path normalization tests", "symlink-root rejection", "preview-to-apply changeset and rollback manifest"]
+}
