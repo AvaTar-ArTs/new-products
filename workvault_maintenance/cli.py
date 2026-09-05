@@ -15,6 +15,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
+from .audit import write_audit_report
+
 ROOT = Path(os.environ.get("WV_HOME", Path.home() / ".workvault-maintenance")).expanduser()
 RUNS = ROOT / "runs"
 LOCK = ROOT / "run.lock"
@@ -220,10 +222,18 @@ def main(argv: list[str] | None = None) -> int:
     plan.add_argument("providers", nargs="*", choices=["brew", "macports", "ollama"], default=["brew", "macports", "ollama"])
     apply = sub.add_parser("apply", help="execute a plan immediately")
     apply.add_argument("providers", nargs="*", choices=["brew", "macports", "ollama"], default=["brew", "macports", "ollama"])
+    audit = sub.add_parser("audit", help="run a bounded read-only filesystem audit")
+    audit.add_argument("roots", nargs="+", type=Path)
+    audit.add_argument("--out", type=Path, default=ROOT / "reports" / "audit.json")
+    audit.add_argument("--top", type=int, default=20)
     for name in ("status", "logs", "report", "cancel", "resume"):
         p = sub.add_parser(name)
         p.add_argument("run_id", nargs="?")
     args = parser.parse_args(argv)
+    if args.command == "audit":
+        output = write_audit_report(args.roots, args.out, args.top)
+        print(f"Read-only audit written to {output}")
+        return 0
     if args.command in ("plan", "apply"):
         providers = args.providers or ["brew", "macports", "ollama"]
         run_dir, state = create_run(providers, args.command == "apply")

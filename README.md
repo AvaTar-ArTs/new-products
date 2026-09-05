@@ -37,6 +37,7 @@ python -m pip install -e .
 
 wv plan
 wv apply brew
+wv audit ~/scripts ~/pythons --out ~/Desktop/workstation-audit.json
 wv status
 wv report RUN_ID
 wv logs RUN_ID
@@ -48,6 +49,14 @@ set. The first version intentionally keeps provider logic small and explicit;
 the next phase adds a proper provider protocol, heartbeat monitoring,
 checkpoint-aware cancellation, cleanup analysis, and WorkVault event-schema
 integration.
+
+## Publish and sell
+
+See [`launch/WORKVAULT-CONTROL-LAUNCH.md`](launch/WORKVAULT-CONTROL-LAUNCH.md)
+for the launch brief, buyer, demo, pricing, and trust message. The repository
+includes an MIT license, changelog, installer, tests, and GitHub CI so the CLI
+can be published as a reproducible open-source product while the Pro edition
+adds the control-room UI and team history.
 
 ## Safety model
 
