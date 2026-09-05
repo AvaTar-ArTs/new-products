@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "AvaTar-ArTs local ecosystem",
+  "products": [
+    {
+      "id": "workvault-control",
+      "family": "ai-workflow-architecture",
+      "name": "WorkVault Control",
+      "stage": "mvp",
+      "kind": "software",
+      "buyer": ["AI developers", "solo founders", "consultants"],
+      "source_repositories": ["AvaTar-ArTs/iterm2", "AvaTar-ArTs/new-products"],
+      "sellable_surface": "CLI plus optional desktop control room",
+      "price_usd": {"free": 0, "pro": 39, "team_monthly": 12}
+    },
+    {
+      "id": "devai-cleanroom",
+      "family": "creator-infrastructure",
+      "name": "DevAI Cleanroom",
+      "stage": "spec",
+      "kind": "software",
+      "buyer": ["developers", "local AI users", "Mac consultants"],
+      "source_repositories": ["AvaTar-ArTs/new-products"],
+      "sellable_surface": "safe developer and AI cache analyzer",
+      "price_usd": {"cli": 19, "desktop": 29, "consultant": 59}
+    },
+    {
+      "id": "agent-control-room",
+      "family": "agents-and-mcp",
+      "name": "Agent Control Room",
+      "stage": "spec",
+      "kind": "software",
+      "buyer": ["multi-agent developers", "small teams"],
+      "source_repositories": ["AvaTar-ArTs/iterm2", "AvaTar-ArTs/claude-terminal"],
+      "sellable_surface": "terminal, process, Git, and agent session observability",
+      "price_usd": {"local": 0, "pro": 49, "team_monthly": 12}
+    },
+    {
+      "id": "local-ai-fleet",
+      "family": "creative-ai-systems",
+      "name": "Local AI Fleet Manager",
+      "stage": "spec",
+      "kind": "software",
+      "buyer": ["Ollama users", "llama.cpp users", "AI consultants"],
+      "source_repositories": ["AvaTar-ArTs/ollama", "AvaTar-ArTs/new-products"],
+      "sellable_surface": "model inventory, endpoint health, and machine-aware recommendations",
+      "price_usd": {"single_machine": 29, "multi_machine": 79}
+    },
+    {
+      "id": "creator-asset-intelligence",
+      "family": "creative-asset-intelligence",
+      "name": "Creator Asset Intelligence",
+      "stage": "spec",
+      "kind": "software",
+      "buyer": ["artists", "video creators", "media agencies"],
+      "source_repositories": ["AvaTar-ArTs/iterm2"],
+      "sellable_surface": "validated media inventory, duplicate detection, and metadata reports",
+      "price_usd": {"individual": 39, "agency": 99}
+    }
+  ]
+}

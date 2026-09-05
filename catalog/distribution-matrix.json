@@ -1,0 +1,11 @@
+{
+  "channels": [
+    {"id": "github", "best_for": ["open_source_cli", "developer_tools"], "required_assets": ["readme", "license", "release_artifacts"]},
+    {"id": "product-hunt", "best_for": ["flagship_launch", "desktop_apps"], "required_assets": ["demo_video", "screenshots", "launch_copy", "pricing"]},
+    {"id": "gumroad", "best_for": ["paid_cli", "templates", "bundles"], "required_assets": ["zip", "install_guide", "license", "support_policy"]},
+    {"id": "pypi", "best_for": ["python_cli", "libraries"], "required_assets": ["pyproject", "tests", "api_docs", "release_workflow"]},
+    {"id": "npm", "best_for": ["mcp_servers", "javascript_tools"], "required_assets": ["package_json", "cli_help", "security_policy"]},
+    {"id": "mcp-directories", "best_for": ["bounded_project_intelligence", "agent_tools"], "required_assets": ["tool_schema", "privacy_policy", "example_prompts"]},
+    {"id": "fiverr", "best_for": ["productized_services", "installation", "audits"], "required_assets": ["offer", "scope", "deliverables", "intake_form"]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "method": "weighted internal score; validate with sales evidence before treating as market truth",
+  "weights": {"pain": 0.3, "asset_reuse": 0.2, "buyer_clarity": 0.2, "time_to_mvp": 0.15, "distribution_fit": 0.15},
+  "scores": [
+    {"product_id": "devai-cleanroom", "score": 8.8, "launch_order": 1, "rationale": "clear disk-space pain and strong reuse of cleanup/audit scripts"},
+    {"product_id": "workvault-control", "score": 8.7, "launch_order": 2, "rationale": "strongest differentiation and existing executable foundation"},
+    {"product_id": "creator-asset-intelligence", "score": 8.2, "launch_order": 3, "rationale": "real media inventories provide immediate validation fixtures"},
+    {"product_id": "local-ai-fleet", "score": 7.9, "launch_order": 4, "rationale": "growing local-AI use case with existing Ollama assets"},
+    {"product_id": "agent-control-room", "score": 7.8, "launch_order": 5, "rationale": "high value but requires deeper process/session integrations"}
+  ]
+}

@@ -2,10 +2,15 @@
 
 Observable, resumable maintenance for macOS developer and AI workstations.
 
-This is the first executable product in the AvaTar-ArTs product portfolio.
-The portfolio strategy and product specifications live in
-[`docs/MARKET-PORTFOLIO-2026-09-04.md`](docs/MARKET-PORTFOLIO-2026-09-04.md),
-with the shared product catalog in [`products/product-catalog.json`](products/product-catalog.json).
+This is the executable foundation of the AvaTar-ArTs commercial product
+foundry. The market portfolio lives in
+[`docs/MARKET-PORTFOLIO-2026-09-04.md`](docs/MARKET-PORTFOLIO-2026-09-04.md);
+the canonical catalog, distribution matrix, and opportunity scoring live in
+[`catalog/`](catalog/).
+
+The repository is catalog-first: source projects remain separate, while this
+repo records how capabilities become sellable products, bundles, services,
+and marketplace listings.
 
 WorkVault Maintenance is the first product in the AvaTar-ArTs `new-products`
 repository. It turns package updates, local-AI checks, and cleanup workflows
