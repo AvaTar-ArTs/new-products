@@ -158,7 +158,7 @@ def run_step(run_dir: Path, state: dict[str, Any], index: int, step: Step) -> bo
         signal.signal(signal.SIGINT, previous)
         signal.signal(signal.SIGTERM, previous_term)
         out.close()
-    status = "cancelled" if cancelled else ("succeeded" if code == 0 else "failed")
+    status = "cancelled" if cancelled or (run_dir / "cancel").exists() else ("succeeded" if code == 0 else "failed")
     state["steps"][index].update(status=status, exit_code=code, finished_at=now())
     emit(run_dir, f"step.{status}", index=index, provider=step.provider, action=step.action, exit_code=code,
          duration_seconds=round(time.monotonic() - started, 2))
@@ -245,6 +245,13 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(state, indent=2))
     elif args.command == "cancel":
         (run_dir / "cancel").write_text(now(), encoding="utf-8")
+        for entry in state.get("steps", []):
+            pid = entry.get("pid")
+            if entry.get("status") == "running" and isinstance(pid, int):
+                try:
+                    os.killpg(pid, signal.SIGTERM)
+                except ProcessLookupError:
+                    pass
         print(f"Cancellation requested for {args.run_id}")
     elif args.command == "resume":
         return execute(run_dir, state)
