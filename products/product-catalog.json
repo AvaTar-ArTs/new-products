@@ -1,0 +1,53 @@
+{
+  "catalog_version": "2026-09-04",
+  "brand": "AvaTar-ArTs",
+  "shared_runtime": "workvault-core",
+  "products": [
+    {
+      "id": "workvault-control",
+      "name": "WorkVault Control",
+      "type": "flagship",
+      "status": "mvp_in_progress",
+      "buyer": "AI-heavy macOS developers and solo founders",
+      "price": {"free": "CLI", "pro": 39, "subscription": 9},
+      "reuse": ["updater-pro.sh", "agent_ops", "WorkVault", "iTerm2"],
+      "first_release": ["plan", "apply", "status", "logs", "cancel", "resume", "report"]
+    },
+    {
+      "id": "devaicleanroom",
+      "name": "DevAI Cleanroom",
+      "type": "utility",
+      "status": "spec_ready",
+      "buyer": "developers and local-AI users",
+      "price": {"cli": 19, "desktop": 29, "consultant": 59},
+      "reuse": ["mac-cleanup-pro.sh", "local-ecosystem-audit.py"]
+    },
+    {
+      "id": "agent-control-room",
+      "name": "Agent Control Room",
+      "type": "desktop_and_tui",
+      "status": "spec_ready",
+      "buyer": "multi-agent power users and small teams",
+      "price": {"free": "local", "pro": 49, "team_subscription": 12},
+      "reuse": ["WorkVault", "agent_ops", "claude-terminal", "iTerm2"]
+    },
+    {
+      "id": "local-ai-fleet",
+      "name": "Local AI Fleet Manager",
+      "type": "desktop_and_cli",
+      "status": "spec_ready",
+      "buyer": "Ollama and llama.cpp users",
+      "price": {"single_machine": 29, "multi_machine": 79},
+      "reuse": ["ollama scripts", ".ollama analysis", "OllaMan"]
+    },
+    {
+      "id": "creator-asset-intelligence",
+      "name": "Creator Asset Intelligence",
+      "type": "media_utility",
+      "status": "spec_ready",
+      "buyer": "artists, creators, and media agencies",
+      "price": {"individual": 39, "agency": 99},
+      "reuse": ["media CSV scans", "ffprobe", "MediaInfo", "video scripts"]
+    }
+  ]
+}
